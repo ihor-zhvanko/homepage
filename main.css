@@ -98,3 +98,21 @@ ul.skills .progress {
 ul.interests {
   padding: 0 0 0 18px;
 }
+
+/***** EDUCATION *****/
+ul.education {
+  font-size: 130%;
+  text-transform: uppercase;
+  list-style: none;
+  padding: 0;
+  letter-spacing: 1px;
+}
+
+ul.education li:not(:last-child){
+  margin-bottom: 2.3rem;
+}
+
+ul.education em {
+  display: block;
+  font-weight: 600;
+}
