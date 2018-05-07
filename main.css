@@ -57,3 +57,37 @@ header .name {
 header .contact {
   font-size: 80%;
 }
+
+/***** RESUME-BLOCK *****/
+
+section{
+  overflow: hidden;
+}
+
+.resume-block {
+  margin: 4rem 0;
+}
+
+.resume-block div, .resume-block p {
+  font-size: 80%;
+}
+
+/***** SKILLS ******/
+ul.skills {
+  list-style: none;
+  font-size: inherit;
+  padding: 0;
+}
+
+ul.skills li {
+  font: inherit;
+  margin: 1rem 0;
+}
+
+ul.skills .progress {
+  width: 50%;
+  height: .4rem;
+  margin: .3rem 0;
+  float: right;
+  border-radius: 0;
+}
