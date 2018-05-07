@@ -93,3 +93,8 @@ ul.skills .progress {
 
   border-radius: 0;
 }
+
+/***** INTERESTS *****/
+ul.interests {
+  padding: 0 0 0 18px;
+}
