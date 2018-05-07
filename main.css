@@ -1,0 +1,168 @@
+/***** COMMON *****/
+html, body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14pt;
+}
+
+h1 {
+  font-size: 300%;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 150%;
+  letter-spacing: 1px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h3 {
+  position: relative;
+  font-size: 150%;
+  letter-spacing: 2px;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  margin: 1rem 0;
+
+}
+
+h3::after {
+  content: ' ';
+  position: absolute;
+  display: inline-block;
+  width: 60px;
+  height: 3px;
+  border-bottom: 3px solid black;
+  bottom: 0;
+  left: 0.5rem;
+  transition: width 1s ease-in-out;
+}
+
+h3:hover::after {
+  width: calc(100% - 1rem);
+}
+
+em {
+  font-weight: 900;
+  font-style: normal;
+}
+
+/***** HEADER *****/
+
+header .name {
+  border-width: 5px !important;
+}
+
+header .contact {
+  font-size: 80%;
+}
+
+/***** RESUME-BLOCK *****/
+
+section{
+  overflow: hidden;
+}
+
+.resume-block {
+  margin: 4rem 0;
+}
+
+.resume-block div, .resume-block p {
+  font-size: 80%;
+}
+
+/***** SKILLS ******/
+ul.skills {
+  list-style: none;
+  font-size: inherit;
+  padding: 0;
+
+}
+
+ul.skills li {
+  font: inherit;
+  margin: 1rem 0;
+}
+
+ul.skills .progress {
+  width: 50%;
+  height: .4rem;
+  margin: .3rem 0;
+  float: right;
+
+  border-radius: 0;
+}
+
+/***** INTERESTS *****/
+ul.interests {
+  padding: 0 0 0 18px;
+}
+
+/***** EDUCATION *****/
+ul.education {
+  font-size: 130%;
+  text-transform: uppercase;
+  list-style: none;
+  padding: 0;
+  letter-spacing: 1px;
+}
+
+ul.education li:not(:last-child){
+  margin-bottom: 2.3rem;
+}
+
+ul.education em {
+  display: block;
+  font-weight: 600;
+}
+
+/***** EXPERIENCE *****/
+ul.experience {
+  font-size: 130%;
+  text-transform: uppercase;
+  list-style: none;
+  padding: 0;
+  letter-spacing: 1px;
+}
+
+ul.experience>li:not(:last-child){
+  margin-bottom: 2.3rem;
+}
+
+ul.experience em {
+  display: block;
+  font-weight: 600;
+}
+
+ul.experience ul {
+  text-transform: none;
+  font-size: 1rem;
+  list-style: square;
+  padding: 1rem 1rem;
+
+}
+ul.experience ul li {
+  font-size: 78%;
+  letter-spacing: 0;
+  margin-top: 0.1rem;
+
+}
+
+/****** ANIMATION ******/
+
+.resume-block {
+  transition: transform 1s ease;
+}
+
+.resume-block.left {
+  transform: translateX(-700px);
+}
+
+.resume-block.right {
+  transform: translateX(700px);
+}
+
+.resume-block.show {
+  transform: translateX(0px);
+}
