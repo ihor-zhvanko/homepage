@@ -148,3 +148,21 @@ ul.experience ul li {
   margin-top: 0.1rem;
 
 }
+
+/****** ANIMATION ******/
+
+.resume-block {
+  transition: transform 1s ease;
+}
+
+.resume-block.left {
+  transform: translateX(-700px);
+}
+
+.resume-block.right {
+  transform: translateX(700px);
+}
+
+.resume-block.show {
+  transform: translateX(0px);
+}
