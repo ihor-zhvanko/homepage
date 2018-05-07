@@ -116,3 +116,35 @@ ul.education em {
   display: block;
   font-weight: 600;
 }
+
+/***** EXPERIENCE *****/
+ul.experience {
+  font-size: 130%;
+  text-transform: uppercase;
+  list-style: none;
+  padding: 0;
+  letter-spacing: 1px;
+}
+
+ul.experience>li:not(:last-child){
+  margin-bottom: 2.3rem;
+}
+
+ul.experience em {
+  display: block;
+  font-weight: 600;
+}
+
+ul.experience ul {
+  text-transform: none;
+  font-size: 1rem;
+  list-style: square;
+  padding: 1rem 1rem;
+
+}
+ul.experience ul li {
+  font-size: 78%;
+  letter-spacing: 0;
+  margin-top: 0.1rem;
+
+}
