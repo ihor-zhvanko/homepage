@@ -57,3 +57,94 @@ header .name {
 header .contact {
   font-size: 80%;
 }
+
+/***** RESUME-BLOCK *****/
+
+section{
+  overflow: hidden;
+}
+
+.resume-block {
+  margin: 4rem 0;
+}
+
+.resume-block div, .resume-block p {
+  font-size: 80%;
+}
+
+/***** SKILLS ******/
+ul.skills {
+  list-style: none;
+  font-size: inherit;
+  padding: 0;
+
+}
+
+ul.skills li {
+  font: inherit;
+  margin: 1rem 0;
+}
+
+ul.skills .progress {
+  width: 50%;
+  height: .4rem;
+  margin: .3rem 0;
+  float: right;
+
+  border-radius: 0;
+}
+
+/***** INTERESTS *****/
+ul.interests {
+  padding: 0 0 0 18px;
+}
+
+/***** EDUCATION *****/
+ul.education {
+  font-size: 130%;
+  text-transform: uppercase;
+  list-style: none;
+  padding: 0;
+  letter-spacing: 1px;
+}
+
+ul.education li:not(:last-child){
+  margin-bottom: 2.3rem;
+}
+
+ul.education em {
+  display: block;
+  font-weight: 600;
+}
+
+/***** EXPERIENCE *****/
+ul.experience {
+  font-size: 130%;
+  text-transform: uppercase;
+  list-style: none;
+  padding: 0;
+  letter-spacing: 1px;
+}
+
+ul.experience>li:not(:last-child){
+  margin-bottom: 2.3rem;
+}
+
+ul.experience em {
+  display: block;
+  font-weight: 600;
+}
+
+ul.experience ul {
+  text-transform: none;
+  font-size: 1rem;
+  list-style: square;
+  padding: 1rem 1rem;
+
+}
+ul.experience ul li {
+  font-size: 78%;
+  letter-spacing: 0;
+  margin-top: 0.1rem;
+
+}
